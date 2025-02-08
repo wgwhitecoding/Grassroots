@@ -239,60 +239,65 @@ body, html {
 }
 
 
+
 /* Programs Section */
 .programs-section {
     display: flex;
     flex-direction: column;
     gap: 40px;
     padding: 40px 10%;
-    background-color: #2E2E2E;
-  }
-  
-  .program-card {
+    background-color: #A5735A;
+}
+
+.program-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 20px;
-    background-color: #fff;
+    background-color: #d1c4b7 ;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-  }
-  
-  .program-image {
-    width: 100%;
+}
+
+.program-image {
+    width: 70%; /* Keep the original size */
     height: auto;
     object-fit: cover;
-  }
-  
-  .program-content {
+}
+
+.program-card:nth-child(2) .program-image {
+    justify-self: end; /* Move the middle image to the right */
+}
+
+.program-content {
     padding: 20px;
-  }
-  
-  .program-content h2 {
+}
+
+.program-content h2 {
     font-size: 1.8rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 15px;
-  }
-  
-  .program-content p,
-  .program-content ul {
+}
+
+.program-content p,
+.program-content ul {
     font-size: 1.2rem;
     color: #555;
     line-height: 1.6;
-  }
-  
-  .program-content ul {
+}
+
+.program-content ul {
     padding-left: 20px;
-  }
-  
-  .program-content ul li {
+}
+
+.program-content ul li {
     margin-bottom: 8px;
-  }
-  
-  .learn-more-btn,
-  .coming-soon-btn {
+}
+
+.learn-more-btn,
+.coming-soon-btn {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
@@ -301,23 +306,22 @@ body, html {
     text-decoration: none;
     border-radius: 4px;
     text-align: center;
-  }
-  
-  .learn-more-btn {
+}
+
+.learn-more-btn {
     background-color: #A5735A;
     color: #fff;
-  }
-  
-  .learn-more-btn:hover {
+}
+
+.learn-more-btn:hover {
     background-color: #8c5c4a;
-  }
-  
-  .coming-soon-btn {
+}
+
+.coming-soon-btn {
     background-color: #ffc107;
     color: #333;
-  }
-  
-  .coming-soon-btn:hover {
+}
+
+.coming-soon-btn:hover {
     background-color: #e0a800;
-  }
-  
+}
