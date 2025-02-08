@@ -1,0 +1,323 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    height: 65vh; /* Height of the hero section */
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Vertically center content */
+    text-align: left; /* Align text to the left */
+    background: url('../images/hero.png') no-repeat center center/cover;
+    color: white;
+    margin-top: 0; /* Remove gap above hero section */
+    padding: 0 10%; /* Horizontal padding for alignment */
+}
+
+.hero-content {
+    max-width: 600px; /* Limit width for readability */
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Main header font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+    white-space: nowrap; /* Ensure the header stays on one line */
+}
+
+.hero-content h2 {
+    font-size: 1.5rem; /* Subheader font size */
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #f8f9fa; /* Slightly lighter color for subheader */
+}
+
+.hero-content .btn {
+    font-size: 1.2rem; /* Button font size */
+    font-weight: bold;
+    padding: 10px 20px; /* Padding for a prominent button */
+    color: white; /* White text */
+    background-color: #A5735A; /* Button color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Square corners */
+}
+
+.hero-content .btn:hover {
+    background-color: #8c5c4a; /* Darker button hover color */
+    color: white; /* White text on hover */
+}
+
+/* Navbar Styling */
+.navbar {
+    height: 56px; /* Fixed navbar height */
+    display: flex;
+    align-items: center;
+    background-color: #d1c4b7 !important; /* Navbar background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky; /* Sticky positioning */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure navbar stays on top */
+}
+
+.navbar-text {
+    font-size: 18px; /* Font size for navbar text */
+    font-weight: bold;
+    color: #000; /* Black text */
+}
+
+.navbar-logo {
+    height: 40px; /* Logo height */
+    width: auto; /* Maintain aspect ratio */
+    max-height: 100%;
+    object-fit: contain; /* Proper scaling */
+    margin-right: 8px; /* Space between logo and text */
+}
+
+.nav-link {
+    color: #000; /* Black text for links */
+    font-size: 16px;
+    margin-right: 10px; /* Spacing between links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #A5735A; /* Match button color */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Quality Access Section */
+.quality-access-section {
+    padding: 60px 10%; /* Match hero section padding */
+    display: flex;
+    justify-content: space-between; /* Align left and right content */
+    align-items: center;
+}
+/* Adjustments for Paragraphs */
+.quality-paragraph:first-of-type {
+    margin-left: 30px; /* Keep the first paragraph aligned */
+}
+
+.quality-paragraph:nth-of-type(2) {
+    margin-left: 130px; /* Move the second paragraph slightly to the right */
+}
+
+
+.quality-left {
+    max-width: 45%;
+}
+
+.quality-right {
+    max-width: 45%;
+    text-align: left; /* Align text left */
+}
+
+.quality-heading {
+    font-size: 2.5rem; /* Match hero heading size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.vision-button {
+    font-size: 1.2rem; /* Keep button font size the same */
+    font-weight: bold;
+    padding: 10px 20px; /* Maintain padding for the same size */
+    background-color: #A5735A;
+    color: white;
+    border: none;
+    border-radius: 4px; /* Square corners */
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add spacing between header and button */
+    display: inline-block; /* Keep button as inline element */
+    transition: all 0.3s ease;
+}
+
+.vision-button:hover {
+    background-color: #8c5c4a; /* Hover effect */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.quality-paragraph {
+    font-size: 1.2rem;
+    font-family: "Georgia", serif; /* Elegant serif font */
+    color: #555;
+    line-height: 1.8; /* Comfortable line spacing */
+    font-style: italic; /* Italic text for elegance */
+    margin-bottom: 20px;
+    text-align: justify; /* Align text neatly */
+}
+
+/* Align Section */
+.quality-access-section .col-md-6 {
+    width: 48%; /* Evenly divide space for columns */
+    padding: 0; /* Remove unnecessary padding */
+}
+
+
+/* Fixed Social Icons */
+.social-icons {
+    position: fixed;
+    right: 20px;
+    top: 50%; /* Center vertically in the viewport */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add spacing between icons */
+    z-index: 1001; /* Ensure icons are above other elements */
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    transition: background 0.3s ease;
+    border-radius: 50%;
+}
+
+.social-icons a:nth-child(1) {
+    background-color: #444; /* Email icon color */
+}
+
+.social-icons a:nth-child(2) {
+    background-color: #E1306C; /* Instagram pink */
+}
+
+.social-icons a:nth-child(3) {
+    background-color: #3b5998; /* Facebook blue */
+}
+
+.social-icons a:nth-child(4) {
+    background-color: #010101; /* TikTok black */
+}
+
+.social-icons a:nth-child(5) {
+    background-color: #0077b5; /* LinkedIn blue */
+}
+
+.social-icons a:hover {
+    opacity: 0.8; /* Slight transparency on hover */
+}
+
+/* Footer Styling */
+.footer {
+    padding: 20px 0;
+    background-color: #f8f9fa; /* Light background for footer */
+    text-align: center;
+}
+
+.footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000; /* Footer title color */
+}
+
+.footer p {
+    font-size: 14px;
+    color: #000; /* Footer text color */
+}
+
+.footer a {
+    color: #000; /* Footer links color */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: #A5735A; /* Hover effect for footer links */
+    text-decoration: underline;
+}
+
+
+/* Programs Section */
+.programs-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 10%;
+    background-color: #2E2E2E;
+  }
+  
+  .program-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .program-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .program-content {
+    padding: 20px;
+  }
+  
+  .program-content h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .program-content p,
+  .program-content ul {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .program-content ul {
+    padding-left: 20px;
+  }
+  
+  .program-content ul li {
+    margin-bottom: 8px;
+  }
+  
+  .learn-more-btn,
+  .coming-soon-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .learn-more-btn {
+    background-color: #A5735A;
+    color: #fff;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #8c5c4a;
+  }
+  
+  .coming-soon-btn {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .coming-soon-btn:hover {
+    background-color: #e0a800;
+  }
+  
