@@ -240,42 +240,41 @@ body, html {
 
 
 
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 /* Programs Section */
 .programs-section {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 40px 10%;
-    background-color: #A5735A;
+    background-color: #A5735A; /* Background colour for the section */
+    padding: 40px 10%; /* Add spacing */
 }
 
 .program-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 20px;
-    background-color: #d1c4b7 ;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    background-color: #d1c4b7; /* Card background colour */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column; /* Ensure vertical layout */
+    align-items: center; /* Center content */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add spacing inside the card */
+    height: 100%; /* Ensure cards are equal height */
 }
 
 .program-image {
-    width: 70%; /* Keep the original size */
-    height: auto;
-    object-fit: cover;
-}
-
-.program-card:nth-child(2) .program-image {
-    justify-self: end; /* Move the middle image to the right */
-}
-
-.program-content {
-    padding: 20px;
+    width: 100%; /* Make the image fill the card's width */
+    height: 280px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensure images are cropped proportionally */
+    border-radius: 6px; /* Slightly rounded edges */
+    margin-bottom: 20px; /* Spacing below the image */
 }
 
 .program-content h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem; /* Heading size */
     font-weight: bold;
     color: #333;
     margin-bottom: 15px;
@@ -283,29 +282,29 @@ body, html {
 
 .program-content p,
 .program-content ul {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Text size */
     color: #555;
     line-height: 1.6;
 }
 
 .program-content ul {
-    padding-left: 20px;
+    list-style-type: disc; /* Add bullet points */
+    padding-left: 20px; /* Indent for bullet points */
+    text-align: left; /* Align the bullet points to the left */
 }
 
 .program-content ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px; /* Add spacing between list items */
 }
 
 .learn-more-btn,
 .coming-soon-btn {
-    display: inline-block;
-    margin-top: 15px;
+    margin-top: auto; /* Push the button to the bottom */
     padding: 10px 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 4px;
-    text-align: center;
+    border-radius: 4px; /* Slightly rounded corners */
 }
 
 .learn-more-btn {
@@ -325,3 +324,38 @@ body, html {
 .coming-soon-btn:hover {
     background-color: #e0a800;
 }
+
+/* Ensure all cards are equal height */
+.program-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute content evenly */
+    height: 100%; /* Make all cards equal height */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .program-image {
+        height: 150px; /* Reduce image height on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .program-card {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .program-content h2 {
+        font-size: 1.3rem; /* Adjust heading size for smaller screens */
+    }
+
+    .program-content p,
+    .program-content ul {
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    .program-image {
+        height: 120px; /* Adjust image height */
+    }
+}
+
